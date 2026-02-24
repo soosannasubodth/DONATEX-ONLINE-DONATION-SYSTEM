@@ -1,0 +1,147 @@
+.admin-approval-container {
+  padding: 30px;
+  background: #FDF6F6;
+  min-height: 100vh;
+  font-family: "Segoe UI, sans-serif";
+}
+
+.back-dashboard-container {
+  margin-bottom: 20px;
+}
+
+.btn-back-dashboard {
+  background: none;
+  border: 1px solid #C97A7A;
+  color: #C97A7A;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.btn-back-dashboard:hover {
+  background: rgba(201, 122, 122, 0.1);
+  transform: translateX(-5px);
+}
+
+.header {
+  border-bottom: 2px solid #C97A7A;
+  margin-bottom: 30px;
+  padding-bottom: 12px;
+}
+
+.header h1 {
+  color: #C97A7A;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: #666;
+  margin-top: 5px;
+}
+
+.error-message {
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.campaigns-table {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  border: 1px solid rgba(201, 122, 122, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #C97A7A;
+  color: white;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  color: #444;
+}
+
+tr:hover {
+  background: #fdfafb;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-approve {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-approve:hover {
+  background: #43a047;
+  transform: translateY(-2px);
+}
+
+.btn-reject {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-reject:hover {
+  background: #e53935;
+  transform: translateY(-2px);
+}
+
+.loading {
+  padding: 40px;
+  text-align: center;
+  color: #C97A7A;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .campaigns-table {
+    overflow-x: auto;
+  }
+}

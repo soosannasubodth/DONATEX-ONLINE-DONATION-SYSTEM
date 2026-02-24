@@ -1,0 +1,219 @@
+.admin-ticket-detail {
+  padding: 30px;
+  background: #FDF6F6;
+  min-height: 100vh;
+  font-family: "Segoe UI, sans-serif";
+}
+
+.back-dashboard-container {
+  margin-bottom: 10px;
+}
+
+.btn-back-dashboard,
+.btn-back {
+  background: none;
+  border: 1px solid #C97A7A;
+  color: #C97A7A;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.btn-back-dashboard:hover,
+.btn-back:hover {
+  background: rgba(201, 122, 122, 0.1);
+  transform: translateX(-5px);
+}
+
+.ticket-header-admin {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  border: 1px solid rgba(201, 122, 122, 0.1);
+}
+
+.ticket-header-admin h1 {
+  color: #C97A7A;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.ticket-meta {
+  color: #666;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.status-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.status-open {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.status-closed {
+  background: #eee;
+  color: #666;
+}
+
+.btn-close {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-reopen {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.ticket-content-admin {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.issue-section,
+.messages-section,
+.reply-form {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(201, 122, 122, 0.1);
+}
+
+.issue-section h3,
+.messages-section h3,
+.reply-form h3 {
+  color: #C97A7A;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.messages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.message-item {
+  padding: 15px;
+  border-radius: 12px;
+  max-width: 80%;
+}
+
+.user-message {
+  align-self: flex-start;
+  background: #fdfafb;
+  border: 1px solid #eee;
+}
+
+.admin-message {
+  align-self: flex-end;
+  background: #FDF6F6;
+  border: 1px solid rgba(201, 122, 122, 0.2);
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #666;
+}
+
+.reply-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.reply-form textarea:focus {
+  outline: none;
+  border-color: #C97A7A;
+  box-shadow: 0 0 0 3px rgba(201, 122, 122, 0.1);
+}
+
+.btn-primary {
+  background: #C97A7A;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #b06565;
+  transform: translateY(-2px);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.attachment-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #C97A7A;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.attachment-link:hover {
+  text-decoration: underline;
+}

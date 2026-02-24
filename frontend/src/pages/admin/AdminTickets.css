@@ -1,0 +1,145 @@
+.admin-tickets-container {
+  padding: 30px;
+  background: #FDF6F6;
+  min-height: 100vh;
+  font-family: "Segoe UI, sans-serif";
+}
+
+.back-dashboard-container {
+  margin-bottom: 20px;
+}
+
+.btn-back-dashboard {
+  background: none;
+  border: 1px solid #C97A7A;
+  color: #C97A7A;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.btn-back-dashboard:hover {
+  background: rgba(201, 122, 122, 0.1);
+  transform: translateX(-5px);
+}
+
+.tickets-header {
+  border-bottom: 2px solid #C97A7A;
+  margin-bottom: 30px;
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tickets-header h1 {
+  color: #C97A7A;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.filter-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-section label {
+  font-weight: 600;
+  color: #444;
+}
+
+.filter-section select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-family: inherit;
+}
+
+.tickets-table {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  border: 1px solid rgba(201, 122, 122, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #C97A7A;
+  color: white;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  color: #444;
+}
+
+tr:hover {
+  background: #fdfafb;
+}
+
+.title-cell {
+  font-weight: 600;
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.status-open {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.status-closed {
+  background: #eee;
+  color: #666;
+}
+
+.btn-view {
+  background: #C97A7A;
+  color: white;
+  border: none;
+  padding: 6px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-view:hover {
+  background: #b06565;
+  transform: translateY(-2px);
+}
+
+.no-data {
+  text-align: center;
+  padding: 30px;
+  color: #999;
+}
+
+@media (max-width: 1024px) {
+  .tickets-table {
+    overflow-x: auto;
+  }
+}
