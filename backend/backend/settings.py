@@ -23,7 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-gcoso936gru0rkb+qbdsfweqtfzi63j$q8is4imun!%7%y_5&u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -54,9 +55,6 @@ MIDDLEWARE = [
 
 ]
 
-
-
-
 ROOT_URLCONF = 'backend.urls'
 
 TEMPLATES = [
@@ -85,14 +83,25 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 
 # Using MySQL (production dev mirror) — matches your MySQL server on port 3307
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'donatex',
+#         'USER': 'root',
+#         'PASSWORD': 'Susu@2005',
+#         'HOST': '127.0.0.1',
+#         'PORT': '3307',
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'donatex',
+        'NAME': 'railway',
         'USER': 'root',
-        'PASSWORD': 'Susu@2005',
-        'HOST': '127.0.0.1',
-        'PORT': '3307',
+        'PASSWORD': 'QSomiTMDITgpHgsyXIvarwfHWFVSJuLj',
+        'HOST': 'switchyard.proxy.rlwy.net',
+        'PORT': '55836',
     }
 }
 
@@ -166,6 +175,10 @@ CORS_ALLOW_METHODS = [
 SESSION_COOKIE_SAMESITE = "Lax"
 SESSION_COOKIE_HTTPONLY = True
 
+
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/

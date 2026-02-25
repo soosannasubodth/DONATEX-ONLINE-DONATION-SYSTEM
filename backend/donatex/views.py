@@ -800,6 +800,10 @@ def manage_user(request, user_id):
         user.email = data["email"]
     if "role" in data and data["role"] in ["donor", "ngo", "admin"]:
         user.role = data["role"]
+    if "address" in data:
+        user.address = data["address"]
+    if "phone_number" in data:
+        user.phone_number = data["phone_number"]
 
     user.save()
     return Response({
